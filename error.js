@@ -1,9 +1,11 @@
 const express = require('express');
+const path = require('path');
 
+const rootDir = require('../util/path');
 const router = express.Router();
 
 router.use((req,res,next)=>{
-    res.send('<h1>Error 404 : page not found !</h1>');
+    res.status(404).sendFile(path.join(rootDir,'views','error.html'));
 })
 
 module.exports = router;

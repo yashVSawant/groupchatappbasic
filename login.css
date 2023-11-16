@@ -1,0 +1,5 @@
+.main-header{
+    background-color: rgb(227, 245, 64);
+    display: flex;
+    justify-content: flex-end;
+}
